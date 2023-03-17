@@ -81,8 +81,13 @@
     }
     
     #searchInput{
+        width: 150px;
+        margin-right: 14px;
         margin-top: 10px;
         height: 11px;
+    }
+    #searchInput::placeholder {
+        font-size: 11px;
     }
     .darkmode {
         display: none;

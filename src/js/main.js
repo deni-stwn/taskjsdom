@@ -116,11 +116,14 @@ addBtn.addEventListener('click', add)
 btnClose.addEventListener('click', close)
 overlay.addEventListener('click', close)
 
-const searchBtn = document.getElementById('searchBtn');
+// const searchBtn = document.getElementById('searchBtn');
 const searchInput = document.getElementById('searchInput');
 
 //!fitur search
-searchBtn.addEventListener('click', () => {
+
+//? mengubah event click menjadi keyup
+
+searchInput.addEventListener('keyup', () => {
   const cards = document.querySelectorAll('.card-result');
   const searchText = searchInput.value.toLowerCase();
 

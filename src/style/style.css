@@ -220,6 +220,8 @@ input:focus{
 }
 
 #searchInput{
+    margin-right: 14px;
+    width: 300px;
     margin-top: 11px;
     height: 15px;
 }
