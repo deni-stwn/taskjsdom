@@ -77,6 +77,7 @@ btn.addEventListener('click', () => {
         name.value = Nvalue;
         alamat.value = Avalue;
         keterangan.value = Kvalue;
+    
         //// if (btnClose.addEventListener('click', close))
         if (!btnClose.addEventListener('click', close)){
           btn.addEventListener('click',() =>{
@@ -84,14 +85,13 @@ btn.addEventListener('click', () => {
           })
         }
         //// card.remove();
-    });
-    
+      });
+      
     form.classList.add('hidden')
     overlay.classList.add('hidden')
 })
 
 //!modal pop up
-
 
 const form = document.getElementById('form')
 const overlay = document.querySelector(".overlay");
@@ -158,8 +158,8 @@ darkMode.addEventListener('click', () => {
   body.classList.toggle('darkMode')
 })
 
-function myFunction(){
-  body.classList.toggle('darkMode')
-}
+
+
+
 
 
