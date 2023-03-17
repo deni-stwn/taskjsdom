@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Menampilkan Gambar dari Input File</title>
+</head>
+<body>
+  <input type="file" id="input-file">
+  <div id="preview"></div>
+
+  <script>
+    // mendapatkan referensi elemen input file dan elemen div preview
+    let inputFile = document.getElementById('input-file');
+    let preview = document.getElementById('preview');
+    
+    // menambahkan event listener pada elemen input file
+    inputFile.addEventListener('change', function() {
+      // membuat objek FileReader
+      let reader = new FileReader();
+      
+      // menambahkan event listener saat file selesai dibaca
+      reader.addEventListener('load', function() {
+        // membuat elemen img dan mengatur atribut src-nya dengan hasil bacaan file
+        let img = document.createElement('img');
+        img.src = reader.result;
+        
+        // menambahkan elemen img ke dalam elemen div preview
+        preview.appendChild(img);
+      });
+      // document.addEventListener("keydown", function (e) {
+//     if (e.key === 'Escape' && !form.classList.contains('hidden')) {
+//         close();
+//     }
+// });
+      
+      // membaca file yang diunggah
+      reader.readAsDataURL(inputFile.files[0]);
+    });
+  </script>
+</body>
+</html>

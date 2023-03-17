@@ -1,0 +1,109 @@
+@media only screen and (max-width: 769px) {
+    #form {
+        left: 27%;
+        right: 70%;
+    }
+    #tampilan {
+        margin-left: -15px;
+    }
+    /* main {
+        display: block;
+    }
+    #form {
+        height: auto;
+        width: 100%;
+    }
+    #tampilan {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .card-form{
+        position: relative;
+        width: 70%;
+    }
+    .card-result {
+        width: 35%;
+    }
+    .card-result:hover {
+        color: rgba(255, 255, 255, 0.928);
+        translate: -1px;
+        transform: scale(1.09);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all ease-in-out 0.3s;
+    } */
+}
+
+@media only screen and (max-width: 605px) {
+    #form {
+        left: 12%;
+        right: 70%;
+    }
+    .card-form {
+        width: 250px;
+        height: auto;
+    }
+    label span {
+        font-size: 12px;
+    }
+    .card-form h1 {
+        font-size: 20px;
+    }
+    .card-form input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+    #tampilan {
+        margin-left: -15px;
+    }
+    #tampilan h2 {
+        font-size: 15px;
+        padding: 8px;
+    }
+    .card-result {
+        padding: 16px;
+        width: 60%;
+    }
+    .ff {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav #add #btnAdd, #searchBtn{
+        border-radius: 6px;
+        padding: 5px;
+        margin: 10px;
+        width: 80px;
+        border: none;
+        font-size: 14px;
+    }
+    
+    #searchInput{
+        margin-top: 10px;
+        height: 11px;
+    }
+    .darkmode {
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 376px){
+    #form {
+        left: 6%;
+    }
+    #searchBtn, .nav #add #btnAdd {
+        font-size: 12px;
+    }
+    #searchInput{
+        margin-top: 10px;
+        height: 8px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    #form {
+        left: -1%;
+    }
+}

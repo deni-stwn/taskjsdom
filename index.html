@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/style/responsive.css" />
+  </head>
+  <body>
+    <main>
+      <div class="nav">
+        <div id="add">
+          <button id="btnAdd">add</button>
+        </div>
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button id="searchBtn">search</button>
+        </div>
+        <div class="darkmode">
+          <button class="dark">
+            🌓
+          </button>
+        </div>
+      </div>
+      <hr style="width: 80%; margin-bottom: -18px" />
+      <div id="form" class="hidden">
+        <form id="form-body" class="card-form">
+          <h1 style="color: rgb(14, 5, 113)">tugas 4 js dom</h1>
+          <hr />
+          <label for="name"
+            ><span class="S-name">Masukan foto profil :</span></label
+          >
+          <input
+            type="file"
+            name="name"
+            id="gambar"
+            accept=".jpg, .jpeg, .png"
+            multiple
+          />
+
+          <label for="name"><span class="S-name">Nama :</span></label>
+          <input type="text" 
+            name="name" 
+            id="name" 
+            placeholder="Masukan nama" 
+            required/>
+
+          <label for="alamat"><span>Alamat :</span></label>
+          <input
+            type="text"
+            name="alamat"
+            id="alamat"
+            placeholder="Masukan alamat"
+            required
+          />
+
+          <label for="keterangan"><span>Keterangan :</span></label>
+          <input
+            type="text"
+            name="keterangan"
+            id="keterangan"
+            placeholder="keterangan"
+            required
+          />
+          <hr style="margin-top: 40px;"/>
+          <button type="button" id="btn">Tampilkan</button>
+          <button type="button" id="close">❌</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+      <div id="tampilan">
+        <div class="card-result">
+          <div class="img">
+            <img src="./src/img/1.png" alt="ff" class="ff" />
+          </div>
+          <h2>deni setiawan</h2>
+          <h2>sukabumi</h2>
+          <h2>sedang mengikuti bootcamp di salt academy</h2>
+          <br />
+          <button type="button" class="delete">❌</button>
+          <button type="button" class="edit">📝</button>
+        </div>
+      </div>
+    </main>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

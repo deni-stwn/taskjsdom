@@ -1,0 +1,241 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.3663896833147321) 100%);
+}
+.darkMode{
+    background: rgb(142,134,236);
+background: radial-gradient(circle, rgba(142,134,236,1) 0%, rgba(16,22,145,0.9770339410178134) 82%);
+}
+.hidden {
+    display: none;
+}
+main {
+    overflow: hidden;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+button {
+    cursor: pointer;
+}
+#form{
+    position: absolute;
+    z-index: 2;
+    right: 100px;
+    padding: 20px;
+    width: 10px;
+    height: 400px;
+    top: 0px;
+    left: 35%;
+}
+label span {
+    margin: 8px;
+    font-size: 15px;
+    color: rgb(4, 4, 86);
+}
+hr {
+    margin-bottom: 20px;
+}
+input {
+    
+    width: 94.5%;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+}
+
+input:focus{
+    outline:2px solid skyblue;
+}
+#tampilan h2 {
+    padding: 14px;
+    font-size: 16px;
+    text-align: center;
+}
+.card-form {
+    position: fixed;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgb(160, 158, 158);
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.4504232967601103) 100%);
+}
+.card-form input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.card-form h1 {
+    text-align: center;
+    margin-top: 4px;
+}
+::placeholder{
+    font-size: 13px;
+}
+#btn {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    background-color: green;
+    color: rgba(255, 255, 255, 0.887);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,0.6184905236508667) 100%);
+}
+#btn:hover {
+    background-color: rgb(9, 93, 9);
+}
+#tampilan{
+    width: 35%;
+    padding: 20px;
+}
+.card-result {
+    margin: 20px;
+    position: relative;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.498);
+    padding: 20px;
+    background: rgb(63,94,251);
+    transition: all ease-in-out 0.3s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: radial-gradient(circle, rgba(63, 94, 251, 0.563) 0%, rgba(252, 70, 106, 0.42) 100%);
+}
+.card-result:hover {
+    color: rgba(255, 255, 255, 0.928);
+    translate: -3px;
+    transform: scale(1.08);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all ease-in-out 0.3s;
+}
+/* !tambhan */
+.delete, #close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: -8px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 100%;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.delete:hover, #close:hover {
+    transition: all 0.3s;
+    background-color: rgba(226, 205, 179, 0.883);
+}
+.edit {
+    position: absolute;
+    border: none;
+    background-color: rgba(135, 207, 235, 0.799);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 35px;
+    margin: -8px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.edit:hover {
+    transition: all 0.3s;
+    background-color: rgb(111, 189, 220);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+.ff {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.3663896833147321) 100%);
+    background-color: red;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-top: 18px;
+}
+
+#tampilan {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .search {
+    display: flex;
+}
+
+.nav #add #btnAdd, #searchBtn{
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    width: 150px;
+    border: none;
+    font-size: 13px;
+    transition: all ease-in-out 0.2s;
+}
+.nav #add #btnAdd:hover, #searchBtn:hover{
+    transition: all ease-in-out 0.2s;
+    background-color: rgba(119, 136, 153, 0.355);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#searchInput{
+    margin-top: 11px;
+    height: 15px;
+}
+
+.darkmode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin-right: 14px;
+    margin-top: 8px;
+    position: absolute;
+}
+.dark {
+    border: none;
+    font-size: 20px;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0);
+}
